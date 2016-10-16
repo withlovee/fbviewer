@@ -12,7 +12,11 @@
 */
 
 // Route::get('/', function () {
-//     return view('welcome');
+// $manager = new MongoDB\Driver\Manager("mongodb://localhost");
+	// return phpinfo();
+    // return view('welcome');ongo
 // });
 
 Route::get('/', 'CommentController@index');
+
+Route::post('/delete', 'CommentController@delete');
